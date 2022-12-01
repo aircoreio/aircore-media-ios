@@ -17,6 +17,6 @@
 
 ## Usage
 
-Usage documentation can be found at https://docs.aircore.io/getting-started/flex-ios-getting-started
+Usage documentation can be found at https://docs.aircore.io/getting-started/flex-ios-quickstart
 
 An example project that utilizes this SDK can be found at https://github.com/aircoreio/aircore-media-ios-sample.
