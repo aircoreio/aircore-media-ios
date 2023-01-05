@@ -9,19 +9,30 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AircoreMedia",
-            targets: ["AircoreMedia", "Bakersfield"]),
+            targets: ["AircoreMedia", "Bakersfield", "AircoreMediaTargets"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url:"https://github.com/aircoreio/aircore-logging-ios", from:"1.0.0")
+    ],
     targets: [
         .binaryTarget(
             name: "AircoreMedia",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F3.1/1/AircoreMedia.xcframework.zip",
-            checksum: "6b37e1cee2d133b88972abd5c97f77bf93acbbd730cd5b177609d3684c74d8ae"
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F3.2/8/AircoreMedia.xcframework.zip",
+            checksum: "b25033a0fb8a8de03ad0e0ff3f67114816742afc3f50a2184ff117fd4db59283"
         ),
         .binaryTarget(
             name: "Bakersfield",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F3.1/1/Bakersfield.xcframework.zip",
-            checksum: "0865ee4ebc4dd3127382e5ec3c820df2f78a97fa34b0e7bc8531d1e1761e4bfd"
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F3.2/8/Bakersfield.xcframework.zip",
+            checksum: "debdc76bca120923e66af06272b9623a27df150e2d401a8502916405b395e0fb"
         ),
+        .target(
+            name: "AircoreMediaTargets",
+            dependencies: [
+                .target(name: "AircoreMedia"),
+                .target(name: "Bakersfield"),
+                .product(name: "AircoreLogging", package: "aircore-logging-ios")
+            ],
+            path: "Sources"
+        )
     ]
 )
