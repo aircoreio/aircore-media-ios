@@ -12,8 +12,6 @@
 
 ## Limitations
 
- - Must be using XCode 13.2.1+ or be deploying for iOS 15+
-   - If using XCode 13.2.1+, you can deploy for iOS 13+
  - Builds for ARM iOS and x86 Simulator.
  - Bitcode must be **disabled**
 
@@ -22,7 +20,3 @@
 Usage documentation can be found at https://docs.aircore.io/getting-started/flex-ios-quickstart
 
 An example project that utilizes this SDK can be found at https://github.com/aircoreio/aircore-media-ios-sample.
-
-## More info
-
-For questions or feedback, contact us using info@aircore.io, [Slack](https://join.slack.com/t/aircoreio/shared_invite/zt-1i6q0p8ra-X5v4epakcAq~tngmlPJgAA), or [Discord](https://discord.com/invite/GwNaRSdkZ2).
