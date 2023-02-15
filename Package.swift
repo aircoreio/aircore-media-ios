@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AircoreMedia",
-            targets: ["AircoreMedia", "Bakersfield", "AircoreMediaTargets"]),
+            targets: ["AircoreMedia", "Bakersfield", "HighwayOne", "MetalPetal", "AircoreMediaTargets"]),
     ],
     dependencies: [
         .package(url:"https://github.com/aircoreio/aircore-logging-ios", from:"1.0.0")
@@ -17,13 +17,23 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AircoreMedia",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F3.2/8/AircoreMedia.xcframework.zip",
-            checksum: "b25033a0fb8a8de03ad0e0ff3f67114816742afc3f50a2184ff117fd4db59283"
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.0/3/AircoreMedia.xcframework.zip",
+            checksum: "bfd80e76f96f384fba747a26d64a0eb9eb5f35093a50b2ba8e1bbb2def41c0e8"
         ),
         .binaryTarget(
             name: "Bakersfield",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F3.2/8/Bakersfield.xcframework.zip",
-            checksum: "debdc76bca120923e66af06272b9623a27df150e2d401a8502916405b395e0fb"
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.0/3/Bakersfield.xcframework.zip",
+            checksum: "d4cb256712ca44d17c368e99bfb5a63911f65105e1ede593e1f37f7e5e35dad8"
+        ),
+        .binaryTarget(
+            name: "HighwayOne",
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.0/3/HighwayOne.xcframework.zip",
+            checksum: "5e8b7e296589b88635b720396882c395fa53862383f48e8fe6274bd4fb47c038"
+        ),
+        .binaryTarget(
+            name: "MetalPetal",
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.0/3/MetalPetal.xcframework.zip",
+            checksum: "dc8243009de63fc04d28cbd6ddd2a0b71dfb7531de65d2bd49168acc64ade6f1"
         ),
         .target(
             name: "AircoreMediaTargets",
