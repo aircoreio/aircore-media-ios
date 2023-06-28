@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AircoreMedia",
-            targets: ["AircoreMedia", "HighwayOne", "MetalPetal", "AircoreMediaTargets"]),
+            targets: ["AircoreMedia", "MetalPetal", "AircoreMediaTargets"]),
     ],
     dependencies: [
         .package(url:"https://github.com/aircoreio/aircore-logging-ios", from:"1.0.0")
@@ -17,18 +17,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AircoreMedia",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.1.0/3/AircoreMedia.xcframework.zip",
-            checksum: "a1d76836ee992a3add5f29cebc89dbfee79f730bfa9a5e8d6badc087fbcc2001"
-        ),
-        .binaryTarget(
-            name: "HighwayOne",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.1.0/3/HighwayOne.xcframework.zip",
-            checksum: "891ae631872f5f33dc8e63632491e1212a4d7bc68c89099dafb59a614be5cdee"
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.2.0/2/AircoreMedia.xcframework.zip",
+            checksum: "c02a790782f4095b65fdd4d36f877922bddac6bd645377832454b2860f23fcb4"
         ),
         .binaryTarget(
             name: "MetalPetal",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.1.0/3/MetalPetal.xcframework.zip",
-            checksum: "127dcfb64a92b70af2cf15af7931a3f141b02057f94c897f14de33699279ed9d"
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.2.0/2/MetalPetal.xcframework.zip",
+            checksum: "a763ecdb37159f3e50315c454315309153c6ffb4a8a6b49e75868bc5fbe8688f"
         ),
         .target(
             name: "AircoreMediaTargets",
