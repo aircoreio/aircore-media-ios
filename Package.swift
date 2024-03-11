@@ -12,18 +12,18 @@ let package = Package(
             targets: ["AircoreMedia", "MetalPetal", "AircoreMediaTargets"]),
     ],
     dependencies: [
-        .package(url:"https://github.com/aircoreio/aircore-logging-ios", from:"1.1.0")
+        .package(url:"https://github.com/aircoreio/aircore-logging-ios", from:"1.3.0")
     ],
     targets: [
         .binaryTarget(
             name: "AircoreMedia",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.3.1/1/AircoreMedia.xcframework.zip",
-            checksum: "232377d641c979130068705cfc1d50194052a2158c351b54b925ecd8df35452f"
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.4.0/17/AircoreMedia.xcframework.zip",
+            checksum: "e526b30dcc2cd362b1e21325f2a5e2f64fd5ac74706574f812c1f5d32d318325"
         ),
         .binaryTarget(
             name: "MetalPetal",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.3.1/1/MetalPetal.xcframework.zip",
-            checksum: "e0454f7aa024d53f6d7041664ec070fb3a331e7c89e452fc6d999d4935d90a15"
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.4.0/17/MetalPetal.xcframework.zip",
+            checksum: "4a13a323363cc5fd655efe96d17b3f8ec0dc75138fd66a15bde16d965c01f629"
         ),
         .target(
             name: "AircoreMediaTargets",
