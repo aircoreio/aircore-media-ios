@@ -17,13 +17,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AircoreMedia",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.8.1/3/AircoreMedia.xcframework.zip",
-            checksum: "f173b0ffb9459a282bc1864644145068429060913e3c695ce24afa1b9a15f837"
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.9.0/2/AircoreMedia.xcframework.zip",
+            checksum: "d01492f35813739b6acabff3381a34996e18909d60ca902e1db89ff900b2eeb3"
         ),
         .binaryTarget(
             name: "MetalPetal",
-            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.8.1/3/MetalPetal.xcframework.zip",
-            checksum: "494fffaac57ace0e0ba927cb2fb4fda0096bdc76accc011d03643ecc488ae52e"
+            url: "https://airtime-eng-asilomar-libs.s3-accelerate.amazonaws.com/jobs/airtimemedia/asilomar/release%252F4.9.0/2/MetalPetal.xcframework.zip",
+            checksum: "c69855d99a093e3847e3a60b3f5dca2715d93baf0ea4042a4592cfd0773d0156"
         ),
         .target(
             name: "AircoreMediaTargets",
